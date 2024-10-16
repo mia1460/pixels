@@ -47,7 +47,7 @@ public:
     metadata::proto::GetLayoutsResponse GetLayouts(const metadata::proto::GetLayoutsRequest& request);
     metadata::proto::GetLayoutResponse GetLayout(const metadata::proto::GetLayoutRequest& request);
     metadata::proto::UpdateLayoutResponse UpdateLayout(const metadata::proto::UpdateLayoutRequest& request);
-    metadata::proto::CreatePathResponse CreatePath(const metadata::proto::CreatePathRequest& request);
+    metadata::proto::AddPathResponse AddPath(const metadata::proto::AddPathRequest& request);
     metadata::proto::GetPathsResponse GetPaths(const metadata::proto::GetPathsRequest& request);
     metadata::proto::UpdatePathResponse UpdatePath(const metadata::proto::UpdatePathRequest& request);
     metadata::proto::DeletePathsResponse DeletePaths(const metadata::proto::DeletePathsRequest& request);

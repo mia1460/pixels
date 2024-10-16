@@ -221,12 +221,12 @@ metadata::proto::UpdateLayoutResponse MetadataClient::UpdateLayout(
   return response;
 }
 
-metadata::proto::CreatePathResponse MetadataClient::CreatePath(
-    const metadata::proto::CreatePathRequest& request) {
-  metadata::proto::CreatePathResponse response;
+metadata::proto::AddPathResponse MetadataClient::AddPath(
+    const metadata::proto::AddPathRequest& request) {
+  metadata::proto::AddPathResponse response;
   grpc::ClientContext context;
 
-  grpc::Status status = stub_->CreatePath(&context, request, &response);
+  grpc::Status status = stub_->AddPath(&context, request, &response);
 
   if (!status.ok()) {
     throw GrpcMetadataException(response.header().errormsg());
